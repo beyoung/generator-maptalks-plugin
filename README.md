@@ -1,4 +1,4 @@
-# generator-maptalks-plugin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-maptalks-plugin [![NPM version][npm-image]][https://www.npmjs.com/package/generator-maptalks-plugin] [![Build Status][travis-image]][https://travis-ci.org/beyoung/generator-maptalks-plugin] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > generator for maptalks plugin
 
 ## Installation
