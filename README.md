@@ -13,8 +13,9 @@ npm install -g generator-maptalks-plugin
 Then generate your new project:
 
 ```bash
-yo maptalks-plugin
+yo maptalks-plugin [myplugin]
 ```
+> as maptalks plugin must own subffix maptalks., so by this plugin, you only need type into the rest name.
 
 ## Getting To Know Yeoman
 
