@@ -1,4 +1,4 @@
-# generator-maptalks-plugin [![NPM version][npm-image]][https://www.npmjs.com/package/generator-maptalks-plugin] [![Build Status][travis-image]][https://travis-ci.org/beyoung/generator-maptalks-plugin] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-maptalks-plugin [![NPM version][https://badge.fury.io/js/generator-maptalks-plugin.svg]][https://www.npmjs.com/package/generator-maptalks-plugin] [![Build Status][https://travis-ci.org/beyoung/generator-maptalks-plugin.svg?branch=master]][https://travis-ci.org/beyoung/generator-maptalks-plugin] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > generator for maptalks plugin
 
 ## Installation
