@@ -19,7 +19,7 @@ module.exports = class extends Generator {
       prompts = [
         {
           type: 'input',
-          name: 'root path',
+          name: 'name',
           message: 'please input a root directory for your maptalks plugin?',
           default: 'myplugin'
         }
@@ -27,7 +27,7 @@ module.exports = class extends Generator {
     }
 
     return this.prompt(prompts).then(props => {
-      this.props = props;
+      this.props = props
     });
   }
 
