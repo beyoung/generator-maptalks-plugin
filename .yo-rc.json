@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "beyouth",
+      "authorEmail": "tuwenyoung@gmail.com",
+      "authorUrl": "https://github.com/beyoung/generator-maptalks-plugin"
+    }
+  }
+}
