@@ -30,7 +30,9 @@ module.exports = class extends Generator {
       this.props = props
     });
   }
-
+  capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
   writing() {
     let appname = '';
     if (this.options.appname === undefined) {
@@ -48,14 +50,32 @@ module.exports = class extends Generator {
       '.gitignore',
       '.babelrc'
     ];
-    let _this = this;
     let currentPath = this.destinationPath(pluginSubfix + appname);
     mkdirp.sync(currentPath);
 
     this.destinationRoot(currentPath);
-
+    let _this = this;
     files.forEach(function (item) {
-      _this.fs.copy(_this.templatePath(item), _this.destinationPath(item));
+      if (item == 'package.json') {
+        _this.fs.copy(_this.templatePath(item), _this.destinationPath(item), {
+          process: function (content) {
+            var regEx = new RegExp('myplugin', 'g');
+            var newContent = content.toString().replace(regEx, appname);
+            return newContent;
+          }
+        });
+      }
+      else if (item == 'index.js') {
+        _this.fs.copy(_this.templatePath(item), _this.destinationPath(item), {
+          process: function (content) {
+            var regEx = new RegExp('HelloLayer', 'g');
+            var newContent = content.toString().replace(regEx, _this.capitalizeFirstLetter(appname) + 'Layer');
+            return newContent;
+          }
+        });
+      } else {
+        _this.fs.copy(_this.templatePath(item), _this.destinationPath(item));
+      }
     });
 
     mkdirp.sync(this.destinationPath(dist));
