@@ -1,7 +1,4 @@
 # generator-maptalks-plugin 
-
-[![NPM Version](https://img.shields.io/npm/v/maptalks.svg)](https://github.com/maptalks/maptalks.js)
-
 [![NPM version](https://badge.fury.io/js/generator-maptalks-plugin.svg)](https://www.npmjs.com/package/generator-maptalks-plugin) 
 [![Build Status](https://travis-ci.org/beyoung/generator-maptalks-plugin.svg?branch=master)](https://travis-ci.org/beyoung/generator-maptalks-plugin) [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > generator for maptalks plugin
